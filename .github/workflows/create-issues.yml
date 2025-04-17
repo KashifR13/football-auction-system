@@ -1,0 +1,15 @@
+name: Import Issues
+
+on:
+  workflow_dispatch:
+
+jobs:
+  import_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create Issues
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: Atomic Task Set
+          content-filepath: ./docs/github_issues.md
