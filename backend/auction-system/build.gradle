@@ -13,6 +13,10 @@ java {
 	}
 }
 
+springBoot {
+	mainClass = 'com.bidr.auction.AuctionSystemApplication'
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor

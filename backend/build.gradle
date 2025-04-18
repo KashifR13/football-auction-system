@@ -4,12 +4,16 @@ plugins {
     id 'java'
 }
 
-group = 'com.kashif.auction'
+group = 'com.bidr'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
+}
+
+springBoot {
+    mainClass = 'com.bidr.auction.AuctionSystemApplication'
 }
 
 dependencies {
