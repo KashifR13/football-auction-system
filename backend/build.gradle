@@ -4,16 +4,12 @@ plugins {
     id 'java'
 }
 
-group = 'com.bidr'
+group = 'com.bidr.auction'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
-}
-
-springBoot {
-    mainClass = 'com.bidr.auction.AuctionSystemApplication'
 }
 
 dependencies {
@@ -24,6 +20,10 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+springBoot {
+    mainClass = 'com.bidr.auction.AuctionSystemApplication'
 }
 
 test {
